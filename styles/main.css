@@ -1,0 +1,237 @@
+/* ---
+GLOBAL STYLES
+--- */
+html {
+  height: 100%; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #333; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 12px;
+  font-weight: bold; }
+
+p {
+  font-size: 16px; }
+
+.dark {
+  color: #333 !important; }
+
+a {
+  color: #777; }
+
+a:hover {
+  color: #f2f2f2;
+  text-decoration: underline; }
+
+.divider {
+  background: #333;
+  height: 50px; }
+
+/* ---
+BUTTONS 
+--- */
+button,
+.btn {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 2.5px;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out; }
+
+.btn-small {
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 2.5px;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out; }
+
+.no-transition {
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: color 0 ease-in !important;
+  transition: none !important; }
+
+button:focus {
+  outline: 0;
+  border: 3px solid #2980B9; }
+
+.primary-btn {
+  border: 3px solid #FFB42E;
+  background-color: #FFB42E;
+  color: #f2f2f2; }
+
+.primary-btn:hover {
+  color: #f2f2f2; }
+
+.dark-btn {
+  border: 3px solid #333;
+  background-color: #333;
+  color: #ddd; }
+
+.dark-btn:hover {
+  color: #333;
+  background-color: #ddd !important; }
+
+/* ---
+NAVBAR
+--- */
+nav {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #ddd;
+  z-index: 100;
+  display: block; }
+  nav .left {
+    list-style-type: none;
+    padding: 0;
+    float: left;
+    display: table-row;
+    margin-left: 1.5em; }
+  nav .right {
+    float: right !important;
+    margin-right: -15px; }
+  nav a {
+    color: #ddd;
+    font-weight: normal;
+    font-size: 12px; }
+  nav img {
+    height: 35px;
+    width: auto; }
+  nav .logo {
+    padding: 0; }
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #333;
+  color: #f2f2f2; }
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #333;
+  color: #f2f2f2; }
+
+.logo {
+  margin-top: 7px; }
+
+#MenuController {
+  height: 25px;
+  width: auto;
+  background: none;
+  border: none;
+  margin-top: 14px; }
+
+.dropdown > ul > li > a:hover {
+  background-color: #f2f2f2; }
+.dropdown > ul > li a > i {
+  margin-left: -12px;
+  margin-top: 2px;
+  color: #FFB42E;
+  font-size: 18px; }
+.dropdown > ul > li > a > img {
+  margin-left: 5px; }
+
+.notif-image {
+  height: 40px;
+  border-radius: 50%; }
+
+span.notif {
+  margin-left: 20px; }
+
+span.notif-name {
+  font-weight: 700; }
+
+#developerRegisterContainer {
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(/Images/Backgrounds/pinetree.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  padding: 50px; }
+
+#nonprofitRegisterContainer {
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e99246a59a35be751528c9e66c8b07e9);
+  background-size: cover;
+  background-position-x: center;
+  padding: 50px; }
+
+/*---
+FOOTER
+---*/
+footer .copyright {
+  color: #ddd;
+  text-align: right; }
+
+footer {
+  background-color: #ddd;
+  padding: 50px;
+  height: 250px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+footer #icon {
+  width: 75%;
+  max-width: 75px; }
+
+footer ul {
+  list-style-type: none !important; }
+
+footer ul li {
+  margin-bottom: 20px; }
+
+footer a {
+  color: #ddd;
+  font-weight: bold; }
+
+footer a:hover {
+  color: #333; }
+
+/*---
+RESPONSIVE
+--- */
+@media (max-width: 767px) {
+  #sidebar {
+    right: 0;
+    transform: translateY(-100%); }
+
+  footer {
+    padding: 25px;
+    height: 200px; }
+
+  footer ul {
+    padding: 0; } }
+
+/*# sourceMappingURL=main.css.map */
