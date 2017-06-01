@@ -48,7 +48,7 @@ function popdown(className) {
     closeThings(param);
 }
 
-$(".item.item1").click(function () {
+$(".item.item2").click(function () {
     popup(".popup1");
 })
 $(".btnclose.close1").click(function () {

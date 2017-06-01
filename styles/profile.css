@@ -14,7 +14,8 @@ a:hover {
   width: 100vw;
   text-align: center; }
   #header #headerBg {
-    background-color: red;
+    background: url("https://source.unsplash.com/random") center center fixed;
+    background-size: cover;
     height: 150px;
     width: 100%;
     margin-top: 20px; }
@@ -64,6 +65,23 @@ a:hover {
   margin: 0;
   margin-bottom: 11px; }
 
+.btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: 15px; }
+  .btns .button {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #444;
+    color: #f2f2f2;
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px; }
+
 #about,
 #reviews,
 #linkNav {
@@ -80,21 +98,6 @@ a:hover {
     #about .item a {
       text-decoration: underline;
       padding-right: 13px; }
-  #about .btns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: -10px; }
-    #about .btns .button {
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-left: 10px;
-      margin-right: 10px;
-      background-color: #444;
-      color: #f2f2f2;
-      border-radius: 4px;
-      padding-top: 3px;
-      padding-bottom: 3px; }
 
 #pFlex {
   max-width: 900px;
@@ -109,6 +112,14 @@ a:hover {
   margin-right: auto;
   margin-top: 30px;
   text-align: center; }
+  #portfolio .noPic {
+    padding-left: 30px !IMPORTANT;
+    padding-right: 30px !IMPORTANT;
+    text-align: left !IMPORTANT; }
+    #portfolio .noPic .btns {
+      margin-top: -7px; }
+    #portfolio .noPic .button {
+      margin-top: 7px; }
   #portfolio .item {
     text-align: center;
     margin-left: -5px;
@@ -162,7 +173,10 @@ a:hover {
   #pFlex {
     -moz-column-count: 2;
     -webkit-column-count: 2;
-    column-count: 2; } }
+    column-count: 2; }
+    #pFlex .noPic {
+      padding-left: 15px !IMPORTANT;
+      padding-right: 15px !IMPORTANT; } }
 @media only screen and (min-width: 700px) {
   #pFlex {
     -moz-column-count: 3;
