@@ -1,5 +1,6 @@
 $("#portfolio").hide();
 $("#reviews").hide();
+$(".popup").hide();
 
 $("#abtLnk").on('click', function () {
     $("#portfolio").hide();
@@ -27,3 +28,29 @@ $("#rvwLnk").on('click', function () {
     $("#rvwLnk").removeClass('inactive').addClass('active');
     $("#reviews").show();
 });
+
+
+function closeThings(selector) {
+    $(selector).hide();
+}
+
+function showThings(selector) {
+    $(selector).show();
+}
+
+function popup(className) {
+    var param = ".popup" + className;
+    showThings(param);
+}
+
+function popdown(className) {
+    var param = ".popup" + className;
+    closeThings(param);
+}
+
+$(".item.item1").click(function () {
+    popup(".popup1");
+})
+$(".btnclose.close1").click(function () {
+    popdown(".popup1");
+})

@@ -1,4 +1,8 @@
 @import 'var.scss';
+body,
+html {
+    overflow-x: hidden;
+}
 a,
 p {
     color: $black;
@@ -109,13 +113,15 @@ a:hover {
         }
     }
 }
-#portfolio {
+#pFlex {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     -moz-column-gap: 1.5em;
     -webkit-column-gap: 1.5em;
     column-gap: 1.5em;
+}
+#portfolio {
     margin-top: 30px;
     .item {
         margin-left: -5px;
@@ -147,15 +153,36 @@ a:hover {
         }
     }
 }
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0.95);
+    color: $white;
+    overflow-y: scroll;
+    top: 0;
+    z-index: 9999999999;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 40px;
+    .close {
+        color: $white;
+    }
+    p {
+        color: $white;
+        margin-top: 40px;
+    }
+}
 @media only screen and (min-width: 400px) {
-    #portfolio {
+    #pFlex {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
     }
 }
 @media only screen and (min-width: 700px) {
-    #portfolio {
+    #pFlex {
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
