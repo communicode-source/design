@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Communicode</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" />
+
+    <!-- =========================
+         STYLESHEETS
+    ============================== -->
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- WEB FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="styles/profile.css" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+
+            <ul class="left">
+                <li class="no-hover">
+                    <a href="#" class="pull-left logo">
+                        <img src="Images/Logo/CLight.svg" />
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-left left">
+                <li class="no-hover">
+                    <a href="#">Explore</a>
+                </li>
+            </ul>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right right">
+                    <li>
+                        <a href="./login">Login</a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" data-target="#register" id="trigger-overlay" href="#">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">Create a Project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <center>
+                            <h4 class="modal-title" id="myModalLabel">Register</h4>
+                        </center>
+                    </div>
+                    <div class="modal-body" id="form-container">
+                        <div class="col-md-6 col-sm-12" id="developerRegisterContainer">
+                            <center>Something Here.</center>
+                        </div>
+                        <div class="col-md-6 col-sm-12" id="nonprofitRegisterContainer">
+                            <center>Something Here.</center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="header">
+        <div id="headerBg"></div>
+        <img src="Images/Backgrounds/bamboo.jpeg" class="profilePic" />
+        <div id="info">
+            <h1>Person Name</h1>
+            <div id="left">
+                <p>Westfield, IN</p>
+                <p>Follows 20</p>
+            </div>
+            <div id="right">
+                <p>Graphic Designer</p>
+                <p>20 Followers</p>
+            </div>
+        </div>
+    </div>
+    <div id="linkNav">
+        <h5 class="link active" id="abtLnk">About</h5>
+        <h5 class="link inactive" id="prtLnk">Portfolio</h5>
+        <h5 class="link inactive" id="rvwLnk">Reviews</h5>
+    </div>
+    <div id="about">
+        <div class="item">
+            <h3>About Person</h3>
+            <hr />
+            <p>This is like a biography about this person. It's not too long but also not too short. It talks about things they like.</p>
+        </div>
+        <div class="item">
+            <h3>Person Online</h3>
+            <hr />
+            <a href="">@Twitter</a>
+            <a href="">@Twitter</a>
+            <a href="">github</a>
+            <a href="">www.website.com</a>
+        </div>
+        <div class="item">
+            <h3>Person's Skills</h3>
+            <hr />
+            <div class="btns">
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+                <p class="button">Skill</p>
+            </div>
+        </div>
+        <div class="item">
+            <h3>Person's Interests</h3>
+            <hr />
+            <div class="btns">
+                <p class="button">Interest</p>
+                <p class="button">Interest</p>
+                <p class="button">Interest</p>
+                <p class="button">Interest</p>
+                <p class="button">Interest</p>
+                <p class="button">Interest</p>
+                <p class="button">Interest</p>
+                <p class="button">Interest</p>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/random" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://source.unsplash.com/user/erondu" alt="">
+            <div class="info">
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="reviews">
+        <div class="review">
+            <img src="http://source.unsplash.com/random" class="icon" />
+            <div class="right">
+                <h3>Person, <i>Project Name</i></h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>Review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review</p>
+                <i>Would I recommend?</i>
+                <p>Yes</p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="http://source.unsplash.com/random" class="icon" />
+            <div class="right">
+                <h3>Person, <i>Project Name</i></h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>Review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review</p>
+                <i>Would I recommend?</i>
+                <p>Yes</p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="http://source.unsplash.com/random" class="icon" />
+            <div class="right">
+                <h3>Person, <i>Project Name</i></h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>Review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review review</p>
+                <i>Would I recommend?</i>
+                <p>Yes</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4 col-sm-2">
+                    <img id="icon" src="Images/Logo/C.svg">
+                    <Images>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 hidden-xs">
+                    <h6 class="copyright">©2015 Communicode</h6>
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    <ul>
+                        <li>
+                            <h6><a href="#">Log In</a></h6></li>
+                        <li>
+                            <h6><a href="#">Register</a></h6></li>
+                        <li>
+                            <h6><a href="#">About Us</a></h6></li>
+                        <li>
+                            <h6><a href="#">FAQs</a></h6></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <ul>
+                        <li>
+                            <h6><a href="#">Contact</a></h6></li>
+                        <li>
+                            <h6><a href="#">Sitemap</a></h6></li>
+                        <li>
+                            <h6><a href="#">Terms of Use</a></h6></li>
+                        <li>
+                            <h6><a href="#">Privacy Policy</a></h6></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

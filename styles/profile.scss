@@ -1,0 +1,194 @@
+@import 'var.scss';
+a,
+p {
+    color: $black;
+    font-size: 12px;
+}
+a:hover {
+    color: $yellow;
+}
+#header {
+    width: 100vw;
+    text-align: center;
+    #headerBg {
+        //background: url("https://images.unsplash.com/photo-1452509133926-2b180c6d6245?dpr=1.25&auto=format&fit=crop&w=1080&h=608&q=80&cs=tinysrgb&crop=&bg=") center center cover fixed;
+        background-color: red;
+        height: 150px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    img {
+        width: 75px;
+        border-radius: 50%;
+        margin-top: -35px;
+    }
+    #info {
+        text-align: center;
+        h1 {
+            margin-bottom: 2px;
+        }
+        #left,
+        #right {
+            display: inline-block;
+            p {
+                margin-bottom: 0px;
+            }
+        }
+        #left {
+            text-align: right;
+            padding-right: 10px;
+        }
+        #right {
+            text-align: left;
+            padding-left: 10px;
+        }
+    }
+}
+#linkNav {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 0;
+    .inactive {
+        border-bottom: solid 2px $black;
+    }
+    .active {
+        border-bottom: solid 2px $yellow;
+    }
+}
+#about,
+#portfolio,
+#reviews {
+    hr {
+        width: 30px;
+        background-color: $yellow;
+        border: 2px solid $yellow;
+        margin: 0;
+        margin-bottom: 11px;
+    }
+}
+#about,
+#reviews,
+#linkNav {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about {
+    margin-top: -15px;
+    .item {
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        a {
+            text-decoration: underline;
+            padding-right: 13px;
+        }
+    }
+    .btns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        .button {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: $grey;
+            color: $white;
+            border-radius: 4px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+}
+#portfolio {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    margin-top: 30px;
+    .item {
+        margin-left: -5px;
+        width: 270px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 50px;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        img {
+            width: 270px;
+        }
+        .info {
+            background-color: rgba(237, 237, 237, 0.5);
+            margin-top: -30px;
+            padding: 5px;
+            padding-top: 7px;
+            padding-left: 10px;
+            position: absolute;
+            z-index: 99;
+            width: 270px;
+            i {
+                font-size: 1.7em;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 400px) {
+    #portfolio {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media only screen and (min-width: 700px) {
+    #portfolio {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+    #header {
+        #headerBg {
+            height: 250px;
+        }
+        img {
+            width: 125px;
+            height: 125px;
+            margin-top: -65px;
+        }
+    }
+}
+#reviews {
+    margin-top: -20px;
+    .review {
+        padding: 20px;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .stars {
+        color: $yellow;
+    }
+    .icon {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    h3 {
+        margin-top: 0;
+    }
+}
