@@ -128,6 +128,19 @@ a:hover {
     margin-right: auto;
     margin-top: 30px;
     text-align: center;
+    #numProj {
+        display: flex;
+        width: 310px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        hr {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     .noPic {
         padding-left: 30px !IMPORTANT;
         padding-right: 30px !IMPORTANT;
