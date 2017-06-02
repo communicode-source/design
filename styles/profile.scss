@@ -35,6 +35,7 @@ a:hover {
         #left,
         #right {
             display: inline-block;
+            margin-left: 20px;
             p {
                 margin-bottom: 0px;
             }
@@ -189,22 +190,42 @@ a:hover {
 .popup {
     width: 100%;
     height: 100%;
+    background-color: rgba(70, 70, 70, 0.95);
     position: fixed;
-    background-color: rgba(51, 51, 51, 0.95);
-    color: $white;
-    overflow-y: scroll;
     top: 0;
-    z-index: 9999999999;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    left: 0;
     padding-top: 40px;
-    .close {
-        color: $white;
+    overflow-y: scroll;
+    z-index: 999999999999999999;
+    color: $white;
+    img {
+        display: block;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: auto;
     }
     p {
+        max-width: 75vw;
+        padding-bottom: 40;
+        margin-left: auto;
+        margin-right: auto;
         color: $white;
-        margin-top: 40px;
+        margin-top: 20px;
+        b {
+            font-weight: 700;
+        }
+    }
+    .close {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        padding: 20 40 0 40;
+        color: $white;
+        font-size: 45px;
+        margin-top: -13px;
     }
 }
 @media only screen and (min-width: 400px) {
