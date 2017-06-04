@@ -1,11 +1,21 @@
 @import "var.scss";
 .page {
-    margin-top: 60px;
+    min-height: 100vh;
+    overflow-y: auto;
     padding: 15px;
+    padding-top: 100px;
     text-align: left;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    input:focus,
+    textarea:focus {
+        border-bottom: 1px solid $yellow;
+        background-color: transparent;
+    }
+    textarea:focus {
+        border: 1px solid $yellow !IMPORTANT;
+    }
     h1 {
         text-align: left;
         margin-top: 0px;
@@ -26,17 +36,6 @@
         }
         .active {
             color: $black;
-        }
-    }
-    .simple {
-        display: flex;
-        flex-wrap: wrap;
-        input {
-            padding-bottom: 0px;
-            padding-top: 0px;
-            max-width: 350px;
-            height: auto;
-            margin-left: 10px;
         }
     }
     .calendar {
@@ -61,7 +60,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            .item {
+            .item,
+            .on {
                 text-align: center;
                 margin: 15px;
                 .icon {
@@ -78,6 +78,15 @@
                     }
                 }
             }
+            .off {
+                color: $grey;
+                .icon {
+                    background-color: $light-gray;
+                    i {
+                        color: $black;
+                    }
+                }
+            }
         }
         select[name="track"]:focus,
         option:focus {
@@ -86,7 +95,6 @@
         textarea {
             border: 1px solid $light-gray;
             width: 100%;
-            max-width: 500px;
             padding-top: 5px;
             padding-bottom: 5px;
         }
@@ -96,6 +104,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             .item {
+                cursor: pointer;
                 margin-bottom: 20px;
                 img {
                     width: 85px;
@@ -117,6 +126,7 @@
                 }
             }
             .more {
+                cursor: pointer;
                 width: 85px;
                 height: 85px;
                 text-align: center;
@@ -142,8 +152,14 @@
             margin-top: 10px;
             margin-right: 10px;
         }
+        .select {
+            .info {
+                background-color: rgba(255, 180, 46, 0.8) !IMPORTANT;
+            }
+        }
     }
     .nextStep {
+        cursor: pointer;
         text-decoration: none;
         display: block;
         color: $yellow;
@@ -156,7 +172,6 @@
         flex-wrap: wrap;
         flex-direction: row;
         margin-left: -10px;
-        margin-top: -10px;
         .button {
             color: white;
             background-color: $black;
@@ -166,6 +181,7 @@
             padding-right: 10px;
             margin: 10px;
             i {
+                cursor: pointer;
                 margin-left: 15px;
             }
         }
