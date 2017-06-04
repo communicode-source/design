@@ -1,0 +1,160 @@
+.page {
+  margin-top: 60px;
+  padding: 15px;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .page h1 {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: -20px; }
+  .page #steps p,
+  .page #steps a {
+    display: inline-block; }
+  .page #steps p {
+    padding-left: 4px;
+    padding-right: 4px; }
+  .page #steps .inactive,
+  .page #steps p {
+    color: #777; }
+  .page #steps .active {
+    color: #333; }
+  .page .simple {
+    display: flex;
+    flex-wrap: wrap; }
+    .page .simple input {
+      padding-bottom: 0px;
+      padding-top: 0px;
+      max-width: 350px;
+      height: auto;
+      margin-left: 10px; }
+  .page .calendar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 250px;
+    justify-content: space-between; }
+    .page .calendar .button {
+      background-color: #333;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 2px;
+      border-radius: 4px;
+      width: 100px; }
+  .page .question {
+    margin-top: 60px; }
+    .page .question #types {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .page .question #types .item {
+        text-align: center;
+        margin: 15px; }
+        .page .question #types .item .icon {
+          text-align: center;
+          width: 70px;
+          height: 70px;
+          background-color: #FFB42E;
+          border-radius: 50%; }
+          .page .question #types .item .icon i {
+            font-size: 3em;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%); }
+    .page .question select[name="track"]:focus,
+    .page .question option:focus {
+      outline: none; }
+    .page .question textarea {
+      border: 1px solid #ddd;
+      width: 100%;
+      max-width: 500px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    .page .question #topics {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .page .question #topics .item {
+        margin-bottom: 20px; }
+        .page .question #topics .item img {
+          width: 85px;
+          height: 85px; }
+        .page .question #topics .item .info {
+          height: 85px;
+          width: 85px;
+          margin-top: -85px;
+          position: relative;
+          text-align: center;
+          color: #f2f2f2;
+          background-color: rgba(51, 51, 51, 0.6);
+          z-index: 99; }
+          .page .question #topics .item .info i {
+            font-size: 2em;
+            margin-top: 15px; }
+      .page .question #topics .more {
+        width: 85px;
+        height: 85px;
+        text-align: center;
+        font-size: 6em;
+        position: relative;
+        top: 15%;
+        transform: translateY(-15%); }
+    .page .question button {
+      color: #333;
+      background-color: #FFB42E;
+      padding: 4px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 4px;
+      border: none;
+      box-shadow: none; }
+    .page .question .cover {
+      width: 80px;
+      height: 80px;
+      margin-top: 10px;
+      margin-right: 10px; }
+  .page .nextStep {
+    text-decoration: none;
+    display: block;
+    color: #FFB42E;
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 40px; }
+  .page #talents {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-top: -10px; }
+    .page #talents .button {
+      color: white;
+      background-color: #333;
+      border-radius: 4px;
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 10px; }
+      .page #talents .button i {
+        margin-left: 15px; }
+
+@media screen and (min-width: 700px) {
+  #topics img,
+  #topics .info,
+  #topics .more {
+    width: 125px !IMPORTANT;
+    height: 125px !IMPORTANT; }
+  #topics .info {
+    margin-top: -125px !IMPORTANT; }
+    #topics .info i {
+      margin-top: 30px !IMPORTANT;
+      font-size: 2.5em !IMPORTANT; }
+  #topics .more {
+    top: 7% !IMPORTANT;
+    transform: translateY(7%) !important; }
+    #topics .more i {
+      font-size: 1.2em; } }
+
+/*# sourceMappingURL=createProject.css.map */
