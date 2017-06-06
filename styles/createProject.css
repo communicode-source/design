@@ -1,4 +1,5 @@
 .page {
+  overflow-x: hidden;
   min-height: 100vh;
   overflow-y: auto;
   padding: 15px;
@@ -71,9 +72,6 @@
           background-color: #ddd; }
           .page .question #types .off .icon i {
             color: #333; }
-    .page .question select[name="track"]:focus,
-    .page .question option:focus {
-      outline: none; }
     .page .question textarea {
       border: 1px solid #ddd;
       width: 100%;
@@ -127,6 +125,42 @@
       margin-right: 10px; }
     .page .question .select .info {
       background-color: rgba(255, 180, 46, 0.8) !important; }
+    .page .question ul {
+      list-style: none;
+      padding-left: 0; }
+      .page .question ul li {
+        text-align: left; }
+      .page .question ul .start {
+        border-bottom: #FFB42E 1px solid; }
+        .page .question ul .start p {
+          margin: 0;
+          padding: 3px;
+          font-size: 14px; }
+        .page .question ul .start #down-triangle {
+          margin-top: -15px; }
+      .page .question ul ul {
+        background-color: white; }
+        .page .question ul ul li {
+          padding: 3px;
+          border: 1px solid #ddd;
+          border-top-color: transparent; }
+          .page .question ul ul li a {
+            color: #333; }
+    .page .question #down-triangle {
+      float: right;
+      width: 0;
+      height: 0;
+      margin-top: 10px;
+      border-top: 10px solid #333;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent; }
+    .page .question .cal {
+      position: absolute;
+      padding-bottom: 0px;
+      width: 90vw;
+      max-width: 1000px; }
+    .page .question .cal2 {
+      margin-left: -150px; }
   .page .nextStep {
     cursor: pointer;
     text-decoration: none;

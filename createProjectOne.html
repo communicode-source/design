@@ -133,11 +133,19 @@
         <div class="question">
             <h4>Or select a track...</h4>
             <!-- We can keep this the select, but it has super weird styling due to the styling being rendered by the os and processed by the browser. it sucks. option 2 would be to redo this to a ul, and then just use js to process the selected inputs (easy but like it's more work so that's up to you). just lmk if you want me to recode it -->
-            <select name="track">
-                <option value="Track 1">Track 1</option>
-                <option value="Track 2">Track 2</option>
-                <option value="Track 3">Track 3</option>
-            </select>
+            <ul id="list">
+                <li class="main">
+                    <li class="start">
+                        <p>Select a track...</p>
+                        <div id="down-triangle"></div>
+                    </li>
+                    <ul id="options">
+                        <li class="pick one"><a>Track 1</a></li>
+                        <li class="pick two"><a>Track 2</a></li>
+                        <li class="pick three"><a>Track 3</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <a class="nextStep">
             Step 2 <i class="fa fa-arrow-right" aria-hidden="true"></i>

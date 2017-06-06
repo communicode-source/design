@@ -1,5 +1,7 @@
 // Step Three
 $(".fa-check").hide();
+$(".cal").hide();
+
 $(".item").on("click", function () {
     if (!($(".item").hasClass("select"))) {
         $(".item").removeClass("select");
@@ -13,4 +15,8 @@ $(".item").on("click", function () {
         $(this).find(".info").find(".icon").show();
         $(this).find(".info").find(".fa-check").hide();
     }
+});
+
+$(".button").on("click", function () {
+    $(this).next().toggle();
 });
