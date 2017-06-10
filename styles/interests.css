@@ -1,31 +1,36 @@
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 .fadeIn {
-  animation: fadeIn;
-  animation-duration: .7s; }
-
+    animation: fadeIn;
+    animation-duration: .7s;
+}
 #name {
-  margin-top: 50px;
-  padding: 10px; }
-  #name h2,
-  #name h4 {
-    text-align: center; }
-  #name form {
+    margin-top: 50px;
+    padding: 10px;
+}
+#name h2,
+#name h4 {
+    text-align: center;
+}
+#name form {
     width: 100%;
     margin-top: 20px;
-    text-align: center; }
-    #name form button {
-      width: 125px;
-      border: none;
-      border-radius: 4px;
-      margin-top: 10px;
-      background-color: #FFB42E;
-      font-family: "Montserrat";
-      text-align: center; }
-
-/*# sourceMappingURL=interests.css.map */
+    text-align: center;
+}
+#name form button {
+    width: 125px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    background-color: #FFB42E;
+    font-family: "Montserrat";
+    text-align: center;
+}
