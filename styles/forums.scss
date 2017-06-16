@@ -1,12 +1,21 @@
 @import "var.scss";
+body,
+html {
+    width: 100vw;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
 #full {
-    max-width: 1000px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     margin-top: 60px;
     padding: 10px;
     justify-content: space-between;
+    #content {
+        max-width: 1000px;
+    }
     i {
         font-size: 2em;
         margin-top: 30px;
@@ -45,7 +54,7 @@
             }
         }
     }
-    #sidebar {
+    #side {
         display: none;
     }
     #answers {
@@ -74,6 +83,7 @@
     margin-left: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     h3 {
         margin-left: 20px;
     }
@@ -89,6 +99,47 @@
             }
             i {
                 color: $medium-gray;
+            }
+        }
+    }
+}
+footer {
+    margin-top: 100px;
+}
+@media screen and (min-width: 768px) {
+    #full {
+        #top {
+            img {
+                margin-top: 10px;
+                display: block;
+            }
+        }
+        #side {
+            .item {
+                border-bottom: 1px solid $light-gray;
+                p {
+                    margin-top: -5px;
+                    color: $grey;
+                }
+            }
+            display: block!IMPORTANT;
+            width: 650px;
+        }
+        hr {
+            border-color: $black;
+            border-width: 5px;
+            width: 25px;
+            margin-left: 0;
+        }
+        #flexbox {
+            display: flex;
+        }
+        #answers {
+            margin-left: 50px;
+        }
+        #right {
+            p {
+                padding-right: 100px;
             }
         }
     }

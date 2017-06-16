@@ -1,11 +1,19 @@
+body,
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  word-wrap: break-word; }
+
 #full {
-  max-width: 1000px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   margin-top: 60px;
   padding: 10px;
   justify-content: space-between; }
+  #full #content {
+    max-width: 1000px; }
   #full i {
     font-size: 2em;
     margin-top: 30px; }
@@ -37,7 +45,7 @@
           border-radius: 4px;
           padding-top: 3px;
           padding-bottom: 3px; }
-  #full #sidebar {
+  #full #side {
     display: none; }
   #full #answers {
     padding-left: 10px;
@@ -59,7 +67,8 @@
   max-width: 1000px;
   margin-left: 10px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 40px; }
   #suggested h3 {
     margin-left: 20px; }
   #suggested .flexit {
@@ -73,5 +82,32 @@
         margin-bottom: 0; }
       #suggested .flexit .item i {
         color: #777; }
+
+footer {
+  margin-top: 100px; }
+
+@media screen and (min-width: 768px) {
+  #full #top img {
+    margin-top: 10px;
+    display: block; }
+  #full #side {
+    display: block !important;
+    width: 650px; }
+    #full #side .item {
+      border-bottom: 1px solid #ddd; }
+      #full #side .item p {
+        margin-top: -5px;
+        color: #444; }
+  #full hr {
+    border-color: #333;
+    border-width: 5px;
+    width: 25px;
+    margin-left: 0; }
+  #full #flexbox {
+    display: flex; }
+  #full #answers {
+    margin-left: 50px; }
+  #full #right p {
+    padding-right: 100px; } }
 
 /*# sourceMappingURL=forums.css.map */
